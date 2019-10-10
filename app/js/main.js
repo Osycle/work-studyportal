@@ -53,7 +53,7 @@
 
 
 
-		$(".short-logotypes-items.owl-carousel").owlCarousel({
+		$(".short-reviews-items.owl-carousel").owlCarousel({
 			nav: true,
 			//items: 3,
 			dots: false,
@@ -62,7 +62,7 @@
 			touchDrag: false,
 			responsive:{
 				0:{items:1},
-				991:{items:5}
+				991:{items:2}
 			},
 			navText : owlBtn,
 			margin: 30

@@ -5,14 +5,14 @@
 */
 
 $color-1: #1766FE !default;
-$color-2: #FFA903 !default;
-$color-3: #FF4D00 !default;
-$color-4: #f15045 !default;
+$color-2: #FF7601 !default;
+$color-3: #FFA903 !default;
+$color-4: #FF4D00 !default;
 $color-5: #65a328 !default;
 $color-special-1: #2e1c11;
 
 $font-family-1: "Gilroy";
-$font-family-2: "Open Sans";
+$font-family-2: "Gilroy";
 $font-family-3: sans-serif;
 
 $color-scroll: $color-1;
@@ -20,7 +20,7 @@ $color-footer: #0071BC;
 
 $color-gray-1: #f6f6f6; //#bdbdbd
 $color-gray-2: #f9f9f9;
-$color-gray-3: #9b9b9b;
+$color-gray-3: #838383;
 $color-gray-4: #666666;
 $color-gray-5: #1f1f1f;
 
@@ -36,7 +36,7 @@ $fs-def: 14;
 	padding-left: 0;
 	padding-right: 0;
 }
-$gradient-1: linear-gradient(to right, $color-2, $color-3);
+$gradient-1: linear-gradient(to right, $color-3, $color-4);
 .gradient-1{ 
 	background: $gradient-1; 
 }
@@ -399,7 +399,7 @@ table {
 	background-position: center;
 }
 .shadow-def{
-	box-shadow: 0 0 16px -3px rgba(black, 0.4);
+	box-shadow: 0 0 25px -3px rgba(black, 0.2);
 }
 .shadow-box-1{
 	box-shadow: 0 0 20px -3px rgba(black, 0.1);
@@ -618,6 +618,8 @@ table {
 	@extend .btn-style;
 	transition: all 0.2s ease;
 	min-width: 230px;
+	box-shadow: inset 0 -2px 0px 0px rgba(black, 0.4);
+	background-image: $gradient-1;
 
 	*{
 		color: inherit;
@@ -638,8 +640,10 @@ table {
 		background-repeat: repeat;
 		background-color: darken($color-1, 5%);
 	}
-	box-shadow: inset 0 -2px 0px 0px rgba(black, 0.4);
-	background-image: $gradient-1;
+	&:not(.changecolor-none):active{
+		border-radius: 30px;
+		box-shadow: inset 0 0px 5px 0px rgba(black, 1);
+	}
 	&.radius{
 		border-radius: 20px;
 	}
@@ -929,12 +933,13 @@ h1,h2,h3,h4,h5{
 h1, h2, h3, h4{
 	margin-top: 10px;
 	margin-bottom: 10px;
+	font-weight: 800;
 	position: relative;	
 }
 h1{
 	font-size: em(36);
 	margin-bottom: 15px;
-	font-weight: 700;
+	font-weight: 900;
 	line-height: 120%;
 	@media (max-width: 991px) {
 		font-size: em(26);
@@ -943,13 +948,11 @@ h1{
 h2{
 	font-size: em(28);
 	margin-bottom: 15px;
-	font-weight: 600;
 	@media (max-width: 430px) {
 		font-size: em(23);
 	}
 } 
 h3{
-	font-weight: 600;
 	font-size: em(20);
 	@media (max-width: 430px) {
 		font-size: em(17/1.1);
@@ -957,13 +960,12 @@ h3{
 }
 h4{
 	font-family: $font-family-2;
-	font-weight: 600;
 	font-size: em(18);
 }
 h5{	
 	line-height: 150%;
 	font-weight: 700;
-	font-size: em(13);
+	font-size: em(14);
 }
 
 .h-style-1{
@@ -1019,9 +1021,10 @@ main{
 	}
 	
 	p{
+		font-weight: 500;
     font-style: normal;
 		position: relative;
-		line-height: 135%;
+		line-height: 170%;
 	}
 	ul:not([class]){
 		text-align: left;
