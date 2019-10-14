@@ -767,3 +767,24 @@ figcaption{
 		padding: 15px;
 	}
 }
+
+//contacts-page
+#map-canvas{
+	height: 480px;
+  width: 100%;
+  margin-bottom: -134px;
+}
+.map_desc{
+	display: flex;
+	align-items: center;
+	margin:60px 0;
+	h1{
+		margin:0;
+	}
+	.rectangle{
+		background-color:$color-1;
+		height: 4px;
+		width: 41px;
+		margin: 0 50px;
+	}
+}

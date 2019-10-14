@@ -23,8 +23,16 @@
 }
 
 .footer_content{
+	.social_buttons{
+		margin-top:400px;
+		
+		a{
+			margin:0 10px;
+
+		}
+	}
 	.copyright{
-		margin-top:500px;
+		margin-top:100px;
 		bottom: 0px;
 		font-size: 14px;
 		line-height: 250%;

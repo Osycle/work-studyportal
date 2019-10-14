@@ -34,7 +34,7 @@ $header-min-menu: 70px;
 
 .header-hidden{
 	position: relative;
-	height: $header-top-height+$header-bottom-height+21;
+	height: 100px;
 	transition: height 0.3s ease-in-out 0.4s;
 	display: none;
 	@media ( max-width: 991px ){
@@ -63,6 +63,32 @@ $header-min-menu: 70px;
 	align-items: center;
 	justify-content: space-between;
 	white-space: nowrap;
+	.header-info{
+		
+		a{
+			display: flex;
+
+			.icm{
+				display: flex;
+				background-image:$gradient-1;
+				border-radius: 50%;
+				width: 37px;
+				height: 37px;
+				justify-content: center;
+				align-items: center;
+				margin:auto;
+			}
+			.desc-content{
+				padding: 0 20px;
+				span{
+					font-size: 12px;
+				}
+				p{
+					font-size: 18px;
+				}
+			}
+		}
+	}
 	&.align-i-center{
 		flex-wrap: nowrap;
 	}
@@ -100,6 +126,9 @@ $header-min-menu: 70px;
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
+		}
+		@media (max-width: 991px) {
+			height: 400px;
 		}
 	}
 	.btn-def{

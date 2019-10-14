@@ -191,21 +191,20 @@ $gradient-1: linear-gradient(to right, $color-3, $color-4);
 	background-color: $color-gray-1;
 	.lang{
 		padding: 10px 0;
-		margin: 20px 0;
+		
 		li{
 			border-color: #4c4c4c !important;
 		}
 	}
 }
 .breadcrumb{
+	margin:0;
 	padding: 8px 0;
 	font-size: 0.9em;
 	z-index: 1;
 	position: relative;
 	font-weight: 500;
-	@media (min-width: 992px) {
-		margin-top: 20px;
-	}
+	
 	&, a, .active{ 		
 		a:hover{
 			transform: translateY(-5px);
