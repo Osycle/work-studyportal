@@ -1068,7 +1068,7 @@ hr{
 		b{
 			color: black;
 		}
-		@media (min-width: 1600){
+		@media (min-width: 1600px){
 			margin-bottom: 30px;
 		}
 	}
@@ -1079,6 +1079,7 @@ html{
 		border-radius: 0;
 		background-color: white;
 		border: 1px solid $color-gray-1;
+		box-shadow:0 0 20px -3px rgba(black, 0.1); 
 		&:focus{
 			border-color: $color-gray-2;
 		}
@@ -1089,6 +1090,7 @@ html{
 	textarea.form-control{
 		height: 130px;
 		padding: 10px 15px;
+		resize: none;
 	}
 }
 

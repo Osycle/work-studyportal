@@ -186,17 +186,17 @@ figcaption{
 										url('../img/bg/bg-body-1.png'),
 										url('../img/bg/bg-body-2.png'),
 										url('../img/bg/dotswave.png');
-	background-color: white;
+	background-color: transparent;
 	background-repeat: no-repeat;
-	top: 810px;
+	top: 0;
 	//display: none;
 	z-index: -1;
 	pointer-events: none;
 	//animation: bodyanime 900s linear infinite;
 	background-position: left 0, 
-												0 600px, 
-												100% 1400px,
-												100% 2500px;
+												0 1410px, 
+												100% 2210px,
+												100% 3100px;
 
 }
 
