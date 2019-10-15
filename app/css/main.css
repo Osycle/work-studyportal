@@ -9731,8 +9731,8 @@ figcaption {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center; }
-  .info_block .novelty_bottom .back_button p {
-    padding: 0 10px; }
+  .info_block .novelty_bottom .back_button span {
+    padding-right: 10px; }
   .info_block .novelty_bottom .social_buttons {
     display: -webkit-box;
     display: -webkit-flex;
@@ -9746,8 +9746,8 @@ figcaption {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center; }
-    .info_block .novelty_bottom .social_buttons p {
-      padding: 0 20px; }
+    .info_block .novelty_bottom .social_buttons span {
+      padding-right: 20px; }
     .info_block .novelty_bottom .social_buttons img {
       padding: 0 5px; }
 
