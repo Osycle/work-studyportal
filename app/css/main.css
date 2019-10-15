@@ -9607,11 +9607,153 @@ figcaption {
   margin: 60px 0; }
   .map_desc h1 {
     margin: 0; }
+  @media (max-width: 991px) {
+    .map_desc {
+      margin: 15px 0; } }
   .map_desc .rectangle {
     background-color: #1766FE;
     height: 4px;
     width: 41px;
     margin: 0 50px; }
+
+.number_wrapper .number {
+  list-style: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 40px 0;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 14px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  @media (max-width: 991px) {
+    .number_wrapper .number {
+      margin: 20px 0; } }
+  .number_wrapper .number .active {
+    color: white;
+    padding: 6px;
+    background-image: -webkit-gradient(linear, left top, right top, from(#FFA903), to(#FF4D00));
+    background-image: -webkit-linear-gradient(left, #FFA903, #FF4D00);
+    background-image: -o-linear-gradient(left, #FFA903, #FF4D00);
+    background-image: linear-gradient(to right, #FFA903, #FF4D00);
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px; }
+  .number_wrapper .number li {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 10px; }
+    .number_wrapper .number li:hover {
+      color: #FF7601; }
+
+.blog_page_desc {
+  margin-top: 80px;
+  margin-bottom: 40px; }
+  @media (max-width: 991px) {
+    .blog_page_desc {
+      margin-top: 20px;
+      margin-bottom: 20px; } }
+  .blog_page_desc .date {
+    background-color: #1766FE;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: white;
+    padding: 10px 20px; }
+    .blog_page_desc .date span {
+      padding-right: 10px; }
+
+.info_block h1, .info_block p {
+  margin-bottom: 40px; }
+  @media (max-width: 991px) {
+    .info_block h1, .info_block p {
+      margin-bottom: 20px; } }
+
+.info_block p {
+  font-size: 18px; }
+
+.info_block img {
+  width: 100%;
+  margin: 40px 0; }
+  @media (max-width: 991px) {
+    .info_block img {
+      margin: 10px 0; } }
+
+.info_block .novelty_bottom {
+  margin-bottom: 20px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .info_block .novelty_bottom p {
+    margin: 0; }
+  .info_block .novelty_bottom .back_button a {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .info_block .novelty_bottom .back_button p {
+    padding: 0 10px; }
+  .info_block .novelty_bottom .social_buttons {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .info_block .novelty_bottom .social_buttons p {
+      padding: 0 20px; }
+    .info_block .novelty_bottom .social_buttons img {
+      padding: 0 5px; }
+
+.recommend_block h1 {
+  font-size: 26px;
+  text-align: center; }
 
 /* 
 		_footer.scss
