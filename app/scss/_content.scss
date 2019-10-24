@@ -553,14 +553,15 @@ figcaption{
 		transition: all 0.3s ease;
 		transform: scale(1);
 	}
-	.col-md-4{
-		&:nth-child(1){
-			margin-top: 200px;
+	@media (min-width: 992px){
+		.col-md-4{
+			&:nth-child(1){
+				margin-top: 200px;
+			}
+			&:nth-child(2){
+				margin-top: 100px;
+			}
 		}
-		&:nth-child(2){
-			margin-top: 100px;
-		}
-
 	}
 	figure{
 		border-radius: 30px;
@@ -714,7 +715,9 @@ figcaption{
 		background-color: white;
 		p{
 			font-style: italic;
-			height: 250px;
+			@media (min-width: 992px){
+				height: 250px;
+			}
 			overflow-y: auto;
 		}
 		padding: 35px 30px;

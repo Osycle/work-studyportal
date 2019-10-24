@@ -171,7 +171,6 @@ $header-min-menu: 70px;
 			background-color: $color-1;
 		}
 		.header-top-content{
-			overflow: hidden;
 			height: 100px;
 			.menu{
 				color: white;
@@ -402,9 +401,9 @@ ul[class*="sub-menu"]{
   height: $header-min-menu;
   padding: 0 25px;
 	z-index: 100;
-	color: black;
+	color: white;
 	box-shadow: 0 0 20px 0 black;
-	background-color: white;
+	background-color: $color-1;
 	font-size: 0.9em;
 	.min-menu-logo{
 		padding: 12px 0;
@@ -425,7 +424,7 @@ ul[class*="sub-menu"]{
 		}
 	}
 	.icon-bar{
-		background-color: black;
+		background-color: white;
 	}
 }
 .mm-navbars-top{
@@ -477,7 +476,7 @@ ul[class*="sub-menu"]{
 		img{
 			opacity: 1;
 			filter: drop-shadow( 0 -5px 1px darken($color-1, 5%) );
-			width:100px;
+			width: 100px;
 			margin-top: 15px;
 		}
 	}
