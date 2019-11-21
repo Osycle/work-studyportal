@@ -904,3 +904,95 @@ figcaption{
 		text-align: center;
 	}
 }
+
+
+
+//abroad
+.abroad{
+	caption{
+		h4{
+			color: black;
+		}
+	}
+	tr{
+		border-bottom: 5px solid white;
+		td{
+			padding: 10px 15px;
+			background-color: $color-gray-2;
+			font-weight: 600;
+			position: relative;
+			&:not(:last-child){
+				&:before{
+					@extend .clafclear;
+					width: 2px;
+					height: 60%;
+					top: 50%;
+					transform: translateY(-50%);
+					right: 0;
+					background-color: #D8D8D8;
+				}
+			}
+		}
+	}
+}
+.abroad-detail{
+	background-color: white;
+	padding: 30px;
+	@extend .shadow-def;
+	&>h2{
+		margin-top: 0;
+	}
+	h2{
+		font-weight: 500;
+	}
+}
+.abroad-detail-items{
+	.fa-clock-o, .fa-euro{
+		font-size: 1.4em;
+	}
+	.icon-content{
+		font-weight: 500;
+		color: $color-2;
+		display: flex;
+		align-items: center;
+		margin-bottom: 8px;
+		*{
+			vertical-align: middle;
+		}
+		i{
+			min-width: 20px;
+			margin-right: 10px;
+		}
+	}
+}
+.adroad-other-items{
+	figure{
+		padding: 15px;
+		background-color: white;
+		border-radius: 15px;
+		@extend .shadow-def;
+		&:hover{
+			h4{
+				color: $color-1;
+			}
+			.img{
+				filter: contrast(115%);
+			}
+		}
+	}
+	h4{
+		transition: all 0.3s ease;
+	}
+	p{
+		line-height: 160%;
+	}
+	.desc-content{
+		padding-bottom: 10px;
+	}
+	.img{
+		transition: all 0.3s ease;
+		border-radius: 10px;
+		height: 215px;
+		background-size: cover;
+	}
+}

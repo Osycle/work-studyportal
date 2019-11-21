@@ -324,6 +324,14 @@ ul[class*="sub-menu"]{
 		}
 	}
 }
+.sub-menu-1, .sub-menu-2{
+	li{
+		&:hover{
+			background: linear-gradient(to left, #424958, lighten(#424958, 20%));
+			color: black;
+		}
+	}
+}
 .sub-menu-1{
 	white-space: normal;
 	text-transform: none;
@@ -333,8 +341,12 @@ ul[class*="sub-menu"]{
 }
 .sub-menu-2{
 	left: 100%;
-	margin-top: -40px;
+	min-width: 200px;
+	margin-top: -32px;
 	transform: matrix(1,0,0,1, 10,0);
+	li{
+		display: block;
+	}
 }
 
 
