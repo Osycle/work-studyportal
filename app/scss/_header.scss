@@ -298,8 +298,14 @@ ul[class*="sub-menu"]{
 		width: 100%;
 		padding: 0 15px;
 		transition: all 0.3s ease;
-		background: linear-gradient(to left, #424958, #424958);
-
+		//background: linear-gradient(to left, #424958, #424958);
+		background-color: $color-1;
+		&:nth-child(1){
+			border-radius: 10px 10px 0 0;
+		}
+		&:nth-last-child(1){
+			border-radius: 0 0 10px 10px;
+		}
 		&:not(:last-child){
 			border-bottom: 1px solid rgba(black, 0.1);
 		}
@@ -325,9 +331,12 @@ ul[class*="sub-menu"]{
 	}
 }
 .sub-menu-1, .sub-menu-2{
+	box-shadow: 0 0 15px -2px rgba(black, 0.4);
 	li{
+
 		&:hover{
-			background: linear-gradient(to left, #424958, lighten(#424958, 20%));
+			//background: linear-gradient(to left, #424958, lighten(#424958, 20%));
+			background-color: darken($color-1, 15%);
 			color: black;
 		}
 	}

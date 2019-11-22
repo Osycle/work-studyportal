@@ -996,3 +996,45 @@ figcaption{
 		background-size: cover;
 	}
 }
+
+
+
+
+//tours
+.tours{
+	h1{
+		&:before{
+			display: none;
+		}
+	}
+}
+.tours-items{
+	.img-content{
+		position: relative;
+	}
+	.img{
+		height: 300px;
+		background-size: cover;
+		transition: all 0.3s ease;
+		border-radius: 20px;
+	}
+	.desc-content{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	a{
+		display: block;
+		margin-top: 15px;
+		color: $color-2;
+		font-weight: 800;
+	}
+	figure{
+		&:hover{
+			.img{
+				border-radius: 20px;
+				transform: translateY(-5px);
+				filter: contrast(115%);
+			}
+		}
+	}
+}
