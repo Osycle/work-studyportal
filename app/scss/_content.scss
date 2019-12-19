@@ -1038,3 +1038,139 @@ figcaption{
 		}
 	}
 }
+
+
+#add_form{
+	padding: 50px;
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	background-color: $color-gray-2;
+	h2{
+		margin-bottom: 5px;
+	}
+	.input-content{
+		margin-top: 10px;
+		margin-bottom: 10px;
+		position: relative;
+		input{
+			border-radius: 10px;
+		}
+		.ui-datepicker-trigger{
+			position: absolute;
+			right: 30px;
+			top: 9px;
+			font-size: 18px;
+			background-color: transparent;
+			border: none;
+			color: gray;
+		}
+	}
+	.degree-inputs{
+		display: flex;
+		align-items: center;
+		&>*{
+			width: 100%;
+		}
+		input{
+			&:checked ~ .text{
+				color: white;
+				background-color: $color-1;
+			}
+		}
+		.text{
+			background-color: white;
+			color: gray;
+			display: inline-block;
+			width: 100%;
+			border-radius: 10px;
+			padding: 10px 15px;
+			&:hover{
+				cursor: pointer;
+			}
+		}
+		b{
+			width: 35%;
+			text-align: left;
+			color: gray;
+		}
+	}
+	.js-select{
+		width: 100%;
+		@extend .shadow-def;
+	}
+	.select2-container--default .select2-selection--single .select2-selection__arrow{
+		background-color: white;
+	}
+	.select2{
+		text-align: left;
+		border-radius: 10px;
+		overflow: hidden;
+		background-color: white;
+		.select2-selection__arrow{
+			b{
+				display: none;
+			}
+			@extend .fa;
+			@extend .fa-angle-down;
+			&:before{
+				display: inline-block;
+				color: gray;
+				margin-top: 10px;
+				font-size: 20px;
+			}
+		}
+	}
+	.select2-container--default .select2-selection--single .select2-selection__rendered{
+		line-height: 42px;
+	}
+	.select2-container--default .select2-selection--single{
+		height: 42px;
+	}
+	.type-form{
+		justify-content: center;
+		display: flex;
+		input[type="radio"]{
+			display: none;
+		}
+		.input-content{
+			text-align: center;
+			input{
+				&:checked{
+					& ~ .text{
+						background-color: $color-1;
+						
+					}
+				}
+			}
+			&:nth-child(1){
+				.text{
+					border-radius: 30px 0 0 30px;
+				}
+			}
+			&:nth-child(2){
+				.text{
+					border-radius: 0 30px 30px 0;
+				}
+				
+			}
+		}
+		.text{
+			background-color: #C4C4C4;
+			font-size: em(16);
+			display: inline-block;
+			padding: 20px 20px;
+			color: white;
+			min-width: 320px;
+			&:hover{
+				cursor: pointer;
+			}
+		}
+		label{
+			padding-left: 1px;
+			padding-right: 1px;
+		}
+	}
+}

@@ -33,11 +33,13 @@ gulp.task('img', () =>
 // SASS
 gulp.task('sass', () =>
 	{
-	return gulp.src( app+'/scss/**/*.+(scss|sass)' )
-			.pipe( sass().on('error', sass.logError) )
-			.pipe( autoprefixer( {browsers: 'last 15 versions', cascade: false} ) )
-			.pipe( gulp.dest(app+'/css/') )
-			.pipe( browserSync.reload({stream:true}) );
+		setTimeout(function(){
+			return gulp.src( app+'/scss/**/*.+(scss|sass)' )
+				.pipe( sass().on('error', sass.logError) )
+				.pipe( autoprefixer( {browsers: 'last 15 versions', cascade: false} ) )
+				.pipe( gulp.dest(app+'/css/') )
+				.pipe( browserSync.reload({stream:true}) );
+		}, 1000);
 	}
 );
 
@@ -48,7 +50,7 @@ gulp.task('scripts', () =>
 	{	
 	return gulp.src([
 			app+'/js/plugins/jquery.min.js',
-			//app+'/js/plugins/jquery-ui.js',
+			app+'/js/plugins/jquery-ui.js',
 			//app+'/js/plugins/skrollr.min.js',
 			//app+'/js/plugins/smoothscroll.js',
 			app+'/js/plugins/bootstrap.min.js',
