@@ -289,81 +289,106 @@
 				<li><a href="">4</a></li>
 			</ul>
 		</div>
-		<div class="text-center">
-			<div id="add_form" class="clearfix">
-				<form class=="" class="clearfix">
-					<div class="type-form">
-						<div class="input-content">
-							<label>
-								<input type="radio" name="type-form">
-								<span class="text">Записаться на консультацию</span>
-							</label>
+		<div class="modal-btns">
+			<div class="hide">
+				<div id="add_form" class="clearfix">
+					<form class="clearfix text-center">
+						<div class="type-form">
+							<div class="input-content">
+								<label>
+									<input type="radio" name="type-form" class="singup-1">
+									<span class="text">Записаться на консультацию</span>
+								</label>
+							</div>
+							<div class="input-content">
+								<label>
+									<input type="radio" name="type-form" class="singup-2">
+									<span class="text">Записаться на Экзамен</span>
+								</label>
+							</div>
 						</div>
-						<div class="input-content">
-							<label>
-								<input type="radio" name="type-form">
-								<span class="text">Записаться на Экзамен</span>
-							</label>
+						<div class="entry-header m-v-20">
+							<h2>Отправить заявку</h2>
+							<p>Опишите свой вопрос и мы на него ответим</p>
 						</div>
-					</div>
-					<div class="entry-header m-v-20">
-						<h2>Отправить заявку</h2>
-						<p>Опишите свой вопрос и мы на него ответим</p>
-					</div>
-					<div class="input-content col-md-6 p-h-15">
-						<input type="" name="" class="form-control" placeholder="First name of the applicant:">
-					</div>
-					<div class="input-content col-md-6 p-h-15">
-						<input type="" name="" class="form-control" placeholder="Last name:">
-					</div>
-					<div class="input-content col-md-6 p-h-15">
-						<input type="" name="" class="form-control" placeholder="Passport ID:">
-					</div>
-					<div class="input-content col-md-6 p-h-15">
-						<input class="form-control datepicker-select" type="text" placeholder="Date of birth:" name="" onchange="$(this).attr('value', $(this).val());">
-					</div>
-					<div class="input-content col-md-12 p-h-15">
-						<select class="js-select search-hide">
-							<option>Выбор специализации</option>
-							<option>Лорем Ипсумов</option>
-							<option>Ипсум Лореминявич</option>
-						</select>
-					</div>
-					<div class="input-content col-md-6 p-h-15">
-						<input type="" name="" class="form-control" placeholder="First name of the applicant:">
-					</div>
-					<div class="input-content col-md-6 p-h-15">
-						<input type="" name="" class="form-control" placeholder="Last name:">
-					</div>
-					<div class="degree-inputs col-md-12 p-h-15">
-						<b>Degree:</b>
-						<div class="input-content">
-							<label>
-								<input type="radio" name="degree" class="hide">
-								<span class="text">Foundation</span>
-							</label>
+						<div class="input-content col-md-6 p-h-15">
+							<input type="" name="" class="form-control" placeholder="First name of the applicant:">
 						</div>
-						<div class="input-content">
-							<label>
-								<input type="radio" name="degree" class="hide">
-								<span class="text">Bachelor’s</span>
-							</label>
+						<div class="input-content col-md-6 p-h-15">
+							<input type="" name="" class="form-control" placeholder="Last name:">
 						</div>
-						<div class="input-content">
-							<label>
-								<input type="radio" name="degree" class="hide">
-								<span class="text">Master’s</span>
-							</label>
+						<div class="input-content col-md-6 p-h-15">
+							<input type="" name="" class="form-control" placeholder="Passport ID:">
 						</div>
-					</div>
-				</form>
+						<div class="input-content col-md-6 p-h-15">
+							<input class="form-control datepicker-select" type="text" placeholder="Date of birth:" name="" onchange="$(this).attr('value', $(this).val());">
+						</div>
+						<div class="input-content col-md-12 p-h-15">
+							<select class="js-select search-hide">
+								<option>Выбор специализации</option>
+								<option>Лорем Ипсумов</option>
+								<option>Ипсум Лореминявич</option>
+							</select>
+						</div>
+						<div class="input-content col-md-6 p-h-15">
+							<input type="" name="" class="form-control" placeholder="First name of the applicant:">
+						</div>
+						<div class="input-content col-md-6 p-h-15">
+							<input type="" name="" class="form-control" placeholder="Last name:">
+						</div>
+						<div class="degree-inputs flex-adaptive col-md-12 p-h-15">
+							<b class="color-gray-3">Degree:</b>
+							<div class="input-content">
+								<label>
+									<input type="radio" name="degree" class="hide">
+									<span class="text">Foundation</span>
+								</label>
+							</div>
+							<div class="input-content">
+								<label>
+									<input type="radio" name="degree" class="hide">
+									<span class="text">Bachelor’s</span>
+								</label>
+							</div>
+							<div class="input-content">
+								<label>
+									<input type="radio" name="degree" class="hide">
+									<span class="text">Master’s</span>
+								</label>
+							</div>
+						</div>
+						<div class="input-content col-md-12 p-h-15">
+							<input type="" name="" class="form-control" placeholder="Passport ID:">
+						</div>
+						<div class="payment-inputs flex-adaptive col-md-12 p-h-15">
+							<b class="color-gray-3">Payment method:</b>
+							<div class="input-content">
+								<label>
+									<input type="radio" name="payment" class="hide">
+									<img src="img/other/paypal.png" role="button">
+								</label>
+							</div>
+							<div class="input-content">
+								<label>
+									<input type="radio" name="payment" class="hide">
+									<img src="img/other/payme.png" role="button">
+								</label>
+							</div>
+						</div>
+						<div class="btn-content col-md-12 text-center m-v-30">
+							<span class="btn-def">
+								<button type="submit">Send</button>
+							</span>
+						</div>
+					</form>
+				</div>
 			</div>
 			<div class="container">
 				<span class="btn-def">
-					<a href="" data-src="#add_form" data-fancybox>Записаться на консультацию</a>
+					<a href="javascript:;" data-src="#add_form" data-fancybox onclick="$('.singup-1').click();">Записаться на консультацию</a>
 				</span>
 				<span class="btn-def">
-					<a href="" data-src="#add_form" data-fancybox>Записаться на консультацию</a>
+					<a href="javascript:;" data-src="#add_form" data-fancybox onclick="$('.singup-2').click();">Записаться на консультацию</a>
 				</span>
 			</div>
 		</div>

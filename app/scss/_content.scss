@@ -1042,7 +1042,13 @@ figcaption{
 
 #add_form{
 	padding: 50px;
-	width: 800px;
+	@media (min-width: 992px){
+		width: 800px;
+	}
+	@media (max-width: 991px){
+		width: 100%;	
+		text-align: center;
+	}
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 30px;
@@ -1068,38 +1074,9 @@ figcaption{
 			color: gray;
 		}
 	}
-	.degree-inputs{
-		display: flex;
-		align-items: center;
-		&>*{
-			width: 100%;
-		}
-		input{
-			&:checked ~ .text{
-				color: white;
-				background-color: $color-1;
-			}
-		}
-		.text{
-			background-color: white;
-			color: gray;
-			display: inline-block;
-			width: 100%;
-			border-radius: 10px;
-			padding: 10px 15px;
-			&:hover{
-				cursor: pointer;
-			}
-		}
-		b{
-			width: 35%;
-			text-align: left;
-			color: gray;
-		}
-	}
+
 	.js-select{
 		width: 100%;
-		@extend .shadow-def;
 	}
 	.select2-container--default .select2-selection--single .select2-selection__arrow{
 		background-color: white;
@@ -1107,7 +1084,9 @@ figcaption{
 	.select2{
 		text-align: left;
 		border-radius: 10px;
+		width: 100% !important;
 		overflow: hidden;
+		box-shadow: 0 0 20px -3px rgba(black, 0.1);
 		background-color: white;
 		.select2-selection__arrow{
 			b{
@@ -1132,6 +1111,7 @@ figcaption{
 	.type-form{
 		justify-content: center;
 		display: flex;
+		@extend .flex-adaptive;
 		input[type="radio"]{
 			display: none;
 		}
@@ -1145,25 +1125,30 @@ figcaption{
 					}
 				}
 			}
-			&:nth-child(1){
-				.text{
-					border-radius: 30px 0 0 30px;
+			@media (min-width: 992px){
+				&:nth-child(1){
+					.text{
+						border-radius: 30px 0 0 30px;
+					}
 				}
-			}
-			&:nth-child(2){
-				.text{
-					border-radius: 0 30px 30px 0;
+				&:nth-child(2){
+					.text{
+						border-radius: 0 30px 30px 0;
+					}
+					
 				}
-				
 			}
 		}
 		.text{
+			border-radius: 30px;
 			background-color: #C4C4C4;
 			font-size: em(16);
 			display: inline-block;
 			padding: 20px 20px;
 			color: white;
-			min-width: 320px;
+			@media (min-width: 992px){
+				min-width: 320px;
+			}
 			&:hover{
 				cursor: pointer;
 			}
@@ -1173,4 +1158,68 @@ figcaption{
 			padding-right: 1px;
 		}
 	}
+	.degree-inputs{
+		display: flex;
+		align-items: center;
+		&>*{
+			width: 100%;
+		}
+		.input-content{
+		}
+		input{
+			&:checked ~ .text{
+				color: white;
+				background-color: $color-1;
+			}
+		}
+		.text{
+			box-shadow: 0 0 20px -3px rgba(black, 0.1);
+			background-color: white;
+			color: gray;
+			display: inline-block;
+			width: 100%;
+			border-radius: 10px;
+			padding: 10px 15px;
+			&:hover{
+				cursor: pointer;
+			}
+		}
+		b{
+			@media (min-width: 992px){
+				width: 35%;
+				text-align: left;
+				color: gray;
+			}
+		}
+	}
+	.fancybox-close-small:after{
+		color: gray;
+	}
+	.payment-inputs{
+		align-items: center;
+		b{
+			@media (min-width: 992px){
+				margin-right: 20px;
+			}
+		}
+		img{
+			border: 1px solid transparent;
+			border-radius: 10px;
+			vertical-align: middle;
+		}
+		input{
+			@media (max-width: 991px) {
+				vertical-align: middle;
+				display: inline-block !important;
+			}
+			&:checked{
+				&~img{
+					border-color: $color-2;
+				}
+			}
+		}
+	}
+}
+.select2-container{
+	z-index: 99999;
 }

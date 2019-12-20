@@ -7388,7 +7388,7 @@ table {
   background-repeat: no-repeat;
   background-position: center; }
 
-.shadow-def, .bnr-slider, .short-about .short-about-desc .wrapper, .short-reviews-items .owl-nav .owl-btn, .short-reviews-items .owl-nav .flickity-btn-1 .flickity-prev-next-button, .flickity-btn-1 .short-reviews-items .owl-nav .flickity-prev-next-button, .abroad-detail, .adroad-other-items figure, #add_form .js-select {
+.shadow-def, .bnr-slider, .short-about .short-about-desc .wrapper, .short-reviews-items .owl-nav .owl-btn, .short-reviews-items .owl-nav .flickity-btn-1 .flickity-prev-next-button, .flickity-btn-1 .short-reviews-items .owl-nav .flickity-prev-next-button, .abroad-detail, .adroad-other-items figure {
   -webkit-box-shadow: 0 0 25px -3px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 25px -3px rgba(0, 0, 0, 0.2); }
 
@@ -9890,12 +9890,18 @@ figcaption {
 
 #add_form {
   padding: 50px;
-  width: 800px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
   margin-bottom: 30px;
   background-color: #f9f9f9; }
+  @media (min-width: 992px) {
+    #add_form {
+      width: 800px; } }
+  @media (max-width: 991px) {
+    #add_form {
+      width: 100%;
+      text-align: center; } }
   #add_form h2 {
     margin-bottom: 5px; }
   #add_form .input-content {
@@ -9913,34 +9919,6 @@ figcaption {
       background-color: transparent;
       border: none;
       color: gray; }
-  #add_form .degree-inputs {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center; }
-    #add_form .degree-inputs > * {
-      width: 100%; }
-    #add_form .degree-inputs input:checked ~ .text {
-      color: white;
-      background-color: #1766FE; }
-    #add_form .degree-inputs .text {
-      background-color: white;
-      color: gray;
-      display: inline-block;
-      width: 100%;
-      -webkit-border-radius: 10px;
-      border-radius: 10px;
-      padding: 10px 15px; }
-      #add_form .degree-inputs .text:hover {
-        cursor: pointer; }
-    #add_form .degree-inputs b {
-      width: 35%;
-      text-align: left;
-      color: gray; }
   #add_form .js-select {
     width: 100%; }
   #add_form .select2-container--default .select2-selection--single .select2-selection__arrow {
@@ -9949,7 +9927,10 @@ figcaption {
     text-align: left;
     -webkit-border-radius: 10px;
     border-radius: 10px;
+    width: 100% !important;
     overflow: hidden;
+    -webkit-box-shadow: 0 0 20px -3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px -3px rgba(0, 0, 0, 0.1);
     background-color: white; }
     #add_form .select2 .select2-selection__arrow b {
       display: none; }
@@ -9977,24 +9958,84 @@ figcaption {
       text-align: center; }
       #add_form .type-form .input-content input:checked ~ .text {
         background-color: #1766FE; }
-      #add_form .type-form .input-content:nth-child(1) .text {
-        -webkit-border-radius: 30px 0 0 30px;
-        border-radius: 30px 0 0 30px; }
-      #add_form .type-form .input-content:nth-child(2) .text {
-        -webkit-border-radius: 0 30px 30px 0;
-        border-radius: 0 30px 30px 0; }
+      @media (min-width: 992px) {
+        #add_form .type-form .input-content:nth-child(1) .text {
+          -webkit-border-radius: 30px 0 0 30px;
+          border-radius: 30px 0 0 30px; }
+        #add_form .type-form .input-content:nth-child(2) .text {
+          -webkit-border-radius: 0 30px 30px 0;
+          border-radius: 0 30px 30px 0; } }
     #add_form .type-form .text {
+      -webkit-border-radius: 30px;
+      border-radius: 30px;
       background-color: #C4C4C4;
       font-size: 1.14286em;
       display: inline-block;
       padding: 20px 20px;
-      color: white;
-      min-width: 320px; }
+      color: white; }
+      @media (min-width: 992px) {
+        #add_form .type-form .text {
+          min-width: 320px; } }
       #add_form .type-form .text:hover {
         cursor: pointer; }
     #add_form .type-form label {
       padding-left: 1px;
       padding-right: 1px; }
+  #add_form .degree-inputs {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    #add_form .degree-inputs > * {
+      width: 100%; }
+    #add_form .degree-inputs input:checked ~ .text {
+      color: white;
+      background-color: #1766FE; }
+    #add_form .degree-inputs .text {
+      -webkit-box-shadow: 0 0 20px -3px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 20px -3px rgba(0, 0, 0, 0.1);
+      background-color: white;
+      color: gray;
+      display: inline-block;
+      width: 100%;
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+      padding: 10px 15px; }
+      #add_form .degree-inputs .text:hover {
+        cursor: pointer; }
+    @media (min-width: 992px) {
+      #add_form .degree-inputs b {
+        width: 35%;
+        text-align: left;
+        color: gray; } }
+  #add_form .fancybox-close-small:after {
+    color: gray; }
+  #add_form .payment-inputs {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    @media (min-width: 992px) {
+      #add_form .payment-inputs b {
+        margin-right: 20px; } }
+    #add_form .payment-inputs img {
+      border: 1px solid transparent;
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+      vertical-align: middle; }
+    @media (max-width: 991px) {
+      #add_form .payment-inputs input {
+        vertical-align: middle;
+        display: inline-block !important; } }
+    #add_form .payment-inputs input:checked ~ img {
+      border-color: #FF7601; }
+
+.select2-container {
+  z-index: 99999; }
 
 /* 
 		_footer.scss
@@ -11901,7 +11942,7 @@ html .p-0 {
   .box-lg-12 {
     width: 120%; } }
 
-.flex-content, .flex-adaptive, .flex-def {
+.flex-content, .flex-adaptive, #add_form .type-form, .flex-def {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -11923,7 +11964,7 @@ html .p-0 {
   position: relative; }
 
 @media (max-width: 991px) {
-  .flex-adaptive, .flex-def {
+  .flex-adaptive, #add_form .type-form, .flex-def {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
