@@ -10034,6 +10034,11 @@ figcaption {
     #add_form .payment-inputs input:checked ~ img {
       border-color: #FF7601; }
 
+.spec {
+  display: none; }
+  .spec.active {
+    display: block; }
+
 .select2-container {
   z-index: 99999; }
 

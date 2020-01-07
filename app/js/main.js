@@ -379,6 +379,22 @@
     });
 
 
+		$(".js-select").on("change", function(){
+			console.log(this);
+			console.log(this.value);
+			$(".spec").removeClass("active");
+			$(".spec select").val("");
+			switch(this.value){
+				case "MIAS": 
+					$(".mias").addClass("active");
+					break;
+				case "MUP": 
+					$(".mup").addClass("active");
+					break;
+				
+			}
+		})
+
 	});
 })(jQuery);
 
