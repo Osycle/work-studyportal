@@ -323,57 +323,46 @@
 						<div class="input-content col-md-6 p-h-15">
 							<input class="form-control datepicker-select" type="text" placeholder="Date of birth:" name="" onchange="$(this).attr('value', $(this).val());">
 						</div>
-						<div class="input-content col-md-12 p-h-15">
-							<select class="js-select search-hide">
+						<div class="input-content col-md-12 p-h-15 singup-2-open none">
+							<select class="js-select spec-select search-hide">
 								<option>Выбор специализации</option>
 								<option value="MIAS">MIAS</option>
 								<option value="MUP">MUP</option>
 							</select>
 						</div>
 						<!-- MIAS -->
-						<div class="spec mias input-content col-md-12 p-h-15">
-							<select class="js-select search-hide">
-								<option>Выберите...</option>
-								<option>Anglophone Studies </option>
-								<option>International Business</option>
-								<option>International Relations</option>
+						<div class="spec mias input-content col-md-12 p-h-15 singup-2-open none">
+							<select class="js-select search-hide" >
+								<option value="0">Выберите...</option>
+								<optgroup label="Bachelor’s">
+									<option>Anglophone Studies </option>
+									<option>International Business</option>
+									<option>International Relations</option>
+								</optgroup>
+								<optgroup label="Master’s">
+									<option>Anglophone Studies </option>
+									<option>International Business</option>
+									<option>International Relations</option>
+								</optgroup>
 							</select>
 						</div>
 						<!-- MUP -->
-						<div class="spec mup input-content col-md-12 p-h-15">
+						<div class="spec mup input-content col-md-12 p-h-15 singup-2-open none">
 							<select class="js-select search-hide">
-								<option>Выбор специализации</option>
-								<option value="MIAS">MIAS</option>
-								<option value="MUP">MUP</option>
+								<option value="0">Выберите...</option>
+								<optgroup label="Bachelor’s">
+									<option>Economics and Management</option>
+								</optgroup>
+								<optgroup label="Master’s">
+									<option>Economics and Management</option>
+								</optgroup>
 							</select>
 						</div>
-						<input type="checkbox" name="" id="ix">
 						<div class="input-content col-md-6 p-h-15">
 							<input type="" name="" class="form-control" placeholder="First name of the applicant:">
 						</div>
 						<div class="input-content col-md-6 p-h-15">
 							<input type="" name="" class="form-control" placeholder="Last name:">
-						</div>
-						<div class="degree-inputs flex-adaptive col-md-12 p-h-15">
-							<b class="color-gray-3">Degree:</b>
-							<div class="input-content">
-								<label>
-									<input type="radio" name="degree" class="hide">
-									<span class="text">Foundation</span>
-								</label>
-							</div>
-							<div class="input-content">
-								<label>
-									<input type="radio" name="degree" class="hide">
-									<span class="text">Bachelor’s</span>
-								</label>
-							</div>
-							<div class="input-content">
-								<label>
-									<input type="radio" name="degree" class="hide">
-									<span class="text">Master’s</span>
-								</label>
-							</div>
 						</div>
 						<div class="input-content col-md-12 p-h-15">
 							<input type="" name="" class="form-control" placeholder="Passport ID:">

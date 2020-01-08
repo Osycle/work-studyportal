@@ -27,11 +27,6 @@
 		if ( $(".js-select").length )
 			$(".js-select").select2({
 				placeholder: "Выберите...",
-				// ajax: {
-				//   url: 'https://api.github.com/search/repositories',
-				//   dataType: 'json'
-				//   // Additional AJAX parameters go here; see the end of this chapter for the full code of this example
-				// },
 				allowClear: false
 			});
 		
@@ -378,22 +373,28 @@
       buttonText: "<i class='fa fa-calendar'></i>"
     });
 
+		$('.type-form input[name]').on("change", function(i ,el){
+			window.that = $(this);
+			var addCl = $(".singup-2-open");
+			console.log(this.checked, that.hasClass("singup-2"), addCl);
+			if(that.hasClass("singup-2"))
+				addCl.removeClass("none");
+			else
+				addCl.addClass("none");
+		})
 
-		$(".js-select").on("change", function(){
-			console.log(this);
-			console.log(this.value);
+		$(".spec-select").on("change", function(){
 			$(".spec").removeClass("active");
-			$(".spec select").val("");
+			$(".spec select").val("0").trigger("change.select2");
 			switch(this.value){
-				case "MIAS": 
+				case "MIAS":
 					$(".mias").addClass("active");
 					break;
-				case "MUP": 
+				case "MUP":
 					$(".mup").addClass("active");
 					break;
-				
 			}
-		})
+		});
 
 	});
 })(jQuery);

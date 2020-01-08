@@ -723,6 +723,7 @@ span.btn-opacity{
 			margin-top: 2px;
 			font-weight: 500;
 			text-align: center;
+			border-radius: 50%;
 			background-color: transparent;
 			transition: all 0.3s ease;
 			//border: 1px solid $color-gray-1;
@@ -730,19 +731,23 @@ span.btn-opacity{
 				color: $color-gray-4;
 				display: block;
 				background-color: white;
-				padding: 5px 10px;
+				width: 30px;
+				height: 30px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
 			}
 			&:hover{
 				//transform: scale(0.9);
 				a{
 					//background-color: rgba($color-1, 0.3);
-					color: $color-1;
+					color: $color-2;
 				}
 			}
 			&.active{
-				background-color: $color-1;
+				background: $gradient-1;
 				a{
-					background-color: $color-1;
+					background-color: $color-2;
 					color: white;
 				}
 				&:hover{
