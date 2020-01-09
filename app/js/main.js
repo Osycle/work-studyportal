@@ -24,16 +24,19 @@
 		})
 
 		/* SELECT2 */
-		if ( $(".js-select").length )
+		if ( $(".js-select").length ){
 			$(".js-select").select2({
+				tags: true,
 				placeholder: "Выберите...",
 				allowClear: false
 			});
-		
-		if ( $(".js-select").length )
-		$(".js-select.search-hide").select2({
-			minimumResultsForSearch: Infinity
-		});
+			$(".js-select.search-hide").select2({
+				minimumResultsForSearch: Infinity
+			});
+			$(".spec-select").select2({
+		  	tags: true
+			});
+		}
 
 
 		/*Owl carousel*/

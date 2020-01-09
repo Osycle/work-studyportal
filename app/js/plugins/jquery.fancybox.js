@@ -162,7 +162,7 @@
 
         // Base template for layout
         baseTpl	:
-            '<div class="fancybox-container" role="dialog" tabindex="-1">' +
+            '<div class="fancybox-new-container" role="dialog" tabindex="-1">' +
                 '<div class="fancybox-bg"></div>' +
                 '<div class="fancybox-inner">' +
                     '<div class="fancybox-infobar">' +
