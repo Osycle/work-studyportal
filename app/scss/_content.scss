@@ -1286,3 +1286,57 @@ figcaption{
 	.img-content, .desc-content{
 	}
 }
+
+.language-site{
+	position: fixed;
+	right: 0;
+	top: 30vh;
+	z-index: 2;
+	font-size: 14px;
+	background-color: $color-1;
+	border-radius: 10px 0 0 10px;
+	color: white;
+	padding: 15px 10px;
+	label{
+		padding-left: 8px;
+	}
+	.fa{
+		height: 100%;
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: 8px;
+		font-size: 20px;
+		display: flex;
+		align-items: center;
+		transform: rotate(180deg);
+		justify-content: center;
+		//left: 10px;
+		//top: 50%;
+		//transform: translateY(-50%);
+	}
+	.list-flags{
+		padding-left: 10px;
+		li{
+			margin-top: 5px;
+			margin-bottom: 5px;
+		}
+		img{
+			min-width: 28px;
+		}
+	}
+}
+#lang-toggle{
+	&:checked ~ .wrapper{
+		.list-flags{
+			display: none;
+		}
+		.fa{
+			transform: rotate(0deg);
+		}
+	}
+}
+.rotate-text{
+	writing-mode: vertical-lr;
+	transform: rotate(180deg);
+}

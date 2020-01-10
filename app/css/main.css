@@ -8441,7 +8441,8 @@ input[type="radio"]:checked ~ .radio-style-1, input[type="radio"]:checked ~ .rad
     align-items: center;
     height: 100%; }
   .header-logo img {
-    height: 80%; }
+    /* height: 80%; */
+    width: 140px; }
 
 .header-scroll .header-top {
   -webkit-transform-origin: 50% 0;
@@ -10100,6 +10101,65 @@ figcaption {
 
 .partners-items .desc-content {
   padding: 15px 15px 15px 30px; }
+
+.language-site {
+  position: fixed;
+  right: 0;
+  top: 30vh;
+  z-index: 2;
+  font-size: 14px;
+  background-color: #1766FE;
+  -webkit-border-radius: 10px 0 0 10px;
+  border-radius: 10px 0 0 10px;
+  color: white;
+  padding: 15px 10px; }
+  .language-site label {
+    padding-left: 8px; }
+  .language-site .fa, .language-site #add_form .select2 .select2-selection__arrow, #add_form .select2 .language-site .select2-selection__arrow {
+    height: 100%;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 8px;
+    font-size: 20px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .language-site .list-flags {
+    padding-left: 10px; }
+    .language-site .list-flags li {
+      margin-top: 5px;
+      margin-bottom: 5px; }
+    .language-site .list-flags img {
+      min-width: 28px; }
+
+#lang-toggle:checked ~ .wrapper .list-flags {
+  display: none; }
+
+#lang-toggle:checked ~ .wrapper .fa, #lang-toggle:checked ~ .wrapper #add_form .select2 .select2-selection__arrow, #add_form .select2 #lang-toggle:checked ~ .wrapper .select2-selection__arrow {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg); }
+
+.rotate-text {
+  -webkit-writing-mode: vertical-lr;
+  -ms-writing-mode: tb-lr;
+  writing-mode: vertical-lr;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
 
 /* 
 		_footer.scss
